@@ -1362,6 +1362,8 @@ static VALUE re2_QuoteMeta(VALUE self, VALUE unquoted) {
   return rb_str_new(quoted_string.data(), quoted_string.size());
 }
 
+extern "C" unsigned long long ruby_abi_version(void);
+
 /* Forward declare Init_re2 to be called by C code but define it separately so
  * that YARD can parse it.
  */

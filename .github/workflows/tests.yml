@@ -11,6 +11,7 @@ jobs:
     strategy:
       matrix:
         ruby:
+          - 3.1
           - '3.0'
           - 2.7
           - 2.6
@@ -19,6 +20,7 @@ jobs:
           - 2.3
           - 2.2
           - 2.1.9
+          - head
         libre2:
           - version: "20150501"
             soname: 0
